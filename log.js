@@ -1,3 +1,4 @@
+// modules/Users/daniel/work/nodus/esindex_v1/node_modules/logform/index.js
 const { ina } = require('./helper');
 const { createLogger, format, transports, Logger } = require('winston');
 const { combine, label, printf } = format;
@@ -115,7 +116,7 @@ function loggerSettings(options) {
   return createLogger({
     level: logLevel,
     format: combine(
-        label({label:'Mongo'}),
+        label({label: options.label}),
         timestamp(),
         format,
     ),
