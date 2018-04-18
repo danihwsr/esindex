@@ -1,4 +1,3 @@
-// modules/Users/daniel/work/nodus/esindex_v1/node_modules/logform/index.js
 const { ina } = require('./helper');
 const { createLogger, format, transports, Logger } = require('winston');
 const { combine, label, printf } = format;
